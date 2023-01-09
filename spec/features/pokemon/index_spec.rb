@@ -9,6 +9,8 @@ RSpec.describe "Pokemon Search Index" do
     click_button 'Search'
   
     expect(current_path).to eq(pokemon_index_path)
+
+    ## TO_DO: add a show action in the controller that redirects the user that pokemon's attributes
     # expect(page).to have_content("pikachu")
     # expect(page).to have_content(25)
     # expect(page).to have_content("electric")
