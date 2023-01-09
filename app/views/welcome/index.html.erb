@@ -1,12 +1,14 @@
-
+<div align="center">
+  <h1>Pokémon...gotta catch em all!</h1>
+</div>
 <body>
   <div align'"center class="search-box">
     <div align="center" class="poke-title">
-      <h1>Welcome to the Pokémon App</h1>
+      <h1>Welcome to the Pokédex</h1>
     </div align="center">
 
     <div align="center" class="poke-form">
-      <p>Get started by searching for a Pokémon by name or number:</p>
+      <p>Search for a Pokémon by name or number:</p>
       <%= form_tag '/pokemon', method: :get do %>
         <div align="center" class="poke-search">
           <%= text_field_tag :pokemon %>
