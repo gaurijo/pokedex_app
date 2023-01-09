@@ -15,10 +15,10 @@
 
  */
 body {
-  background-image: url("https://wallpapercave.com/wp/wp8695699.jpg");
+  background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701402170.jpg");
   height: 768px;
   background-size: contain;
-  background-color: #cccccc;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -30,9 +30,24 @@ body {
   padding: 1%;
   border-radius: 30px;
   opacity: 70%;
-  border: 5px solid #cccccc;
+  border: 5px solid #ffffff;
   width: 500px;
   height: 150px;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result-box {
+  background: rgb(241, 241, 241);
+  padding: 1%;
+  border-radius: 30px;
+  opacity: 80%;
+  border: 5px solid #ffffff;
+  width: 500px;
+  height: 400px;
   vertical-align: middle;
   position: absolute;
   top: 50%;

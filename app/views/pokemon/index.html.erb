@@ -1,7 +1,20 @@
+
+<div class="result-box">
+  <div align="center">
+    <%= image_tag "#{@pokemon.image}"%>
+    <%= image_tag "#{@pokemon.shiny}"%>
+  </div>
+
+
 <%= form_tag '/pokemon', method: :get do %>
   <div align="center" class="search-box">
-    <p>Search for a Pokemon</p>
+  <p>Name: <%=@pokemon.name.capitalize%></p>
+  <p>Type: <%=@pokemon.origin.capitalize%></p>
+  <p>Number: <%= @pokemon.id %></p>
+
+  <h2>Search for Another Pokemon</h2>
     <%= text_field_tag :pokemon %>
     <%= submit_tag "Search" %>
   <% end %>
+    </div>
 
