@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root "welcome#index"
   
-  resources :pokemon, only: [:index, :show]
+  resources :pokemon, only: [:index]
 end

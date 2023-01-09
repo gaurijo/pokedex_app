@@ -2,11 +2,12 @@ require 'rails_helper'
 
 RSpec.describe Pokemon do 
   it "exists and has attributes" do 
-    result = PokeFacade.create_pokemon('pikachu')
+    result = JSON.parse(File.read('spec/fixtures/pokemon.json'), symbolize_names: true)
+    pokemon = Pokemon.new(result)
 
-    expect(result).to be_a(Pokemon)
-    expect(result.name).to eq("pikachu")
-    expect(result.id).to eq(25)
-    expect(result.types[0][:type][:name]).to eq("electric")
+    expect(pokemon).to be_a(Pokemon) 
+    expect(pokemon.name).to eq("pikachu")
+    expect(pokemon.id).to eq(25)
+    expect(pokemon.origin).to eq("electric")
   end
 end

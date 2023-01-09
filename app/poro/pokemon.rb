@@ -6,6 +6,5 @@ class Pokemon
     @origin = data[:types][0][:type][:name]
     @image = data[:sprites][:front_default]
     @shiny = data[:sprites][:front_shiny]
-    # require 'pry'; binding.pry 
   end
 end
