@@ -1,25 +1,26 @@
-
+<header align="center">
+  <%= button_to "Home", root_path, method: :get %>
+</header>
 <div align="center">
   <h1>Pokémon...gotta catch em all!</h1>
 </div>
 
-<div class="result-box"
-  <div align="center">
+<div align="center" class="result-box">
     <%= image_tag "#{@pokemon.image}"%>
     <%= image_tag "#{@pokemon.shiny}"%>
-    </div>
-  </div>
+</div>
 
 
 <%= form_tag '/pokemon', method: :get do %>
   <div align="center" class="search-box">
-  <h2><%=@pokemon.name.capitalize%></h2>
+  <p>Name: <%=@pokemon.name.capitalize%></p>
   <p>Type: <%=@pokemon.origin.capitalize%></p>
   <p>Number: <%= @pokemon.id %></p>
 
-  <h3>Search for a Pokemon</h3>
+  <h2>Search for Another Pokemon</h2>
     <%= text_field_tag :pokemon %>
     <%= submit_tag "Search" %>
+    </div align="center">
   <% end %>
-    </div>
+  </div>
 
