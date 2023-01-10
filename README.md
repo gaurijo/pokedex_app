@@ -1,7 +1,7 @@
 # README
 ## Welcome to the Pokédex! 
-- This is an interactive rails application that consumes a single GET endpoint from the PokéAPI (docs: https://pokeapi.co/docs/v2#info)
-- Users can search for a pokémon either by name or number and will see their pokémon's information (name, number, type (fire, electric, etc), as well as a default image and a "shiny" image)
+- This is an interactive rails application that consumes a single `GET endpoint` from the `PokéAPI` (docs: https://pokeapi.co/docs/v2#info)
+- Users can search for a pokémon either by `name` or `number` and will see their pokémon's information `(name, number, type (fire, electric, etc)`, as well as a `default image` and a `"shiny" image`)
 - Users can then continue to search for another pokémon, or go back to the Home page
 [![Screen-Shot-2023-01-09-at-11-58-00-AM.png](https://i.postimg.cc/8cxv0Y9K/Screen-Shot-2023-01-09-at-11-58-00-AM.png)](https://postimg.cc/4HbnKWJV)
 [![Screen-Shot-2023-01-09-at-11-58-23-AM.png](https://i.postimg.cc/CdyZNqn9/Screen-Shot-2023-01-09-at-11-58-23-AM.png)](https://postimg.cc/wRVTx3Vk)
